@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="7dp"
+    android:layout_marginRight="7dp"
+    android:layout_marginTop="7dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/i_item_avatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="4dp"
+            android:src="@mipmap/ic_launcher" />
+
+
+        <com.whinc.widget.ratingbar.RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/i_item_avatar"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+
+            app:rb_click_rating="true"
+            app:rb_count="5"
+            app:rb_empty="@drawable/empty"
+            app:rb_fill="@drawable/fill"
+            app:rb_max_count="10"
+            app:rb_space="0dp"
+            app:rb_touch_rating="true" />
+
+        <TextView
+            android:id="@+id/t_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratingBar"
+            android:layout_toRightOf="@+id/i_item_avatar"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="AVATAR"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:id="@+id/t_item_genre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t_item_title"
+            android:layout_toRightOf="@+id/i_item_avatar"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Genres : GEnere,genre" />
+
+
+        <TextView
+
+            android:id="@+id/t_item_release"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t_item_genre"
+            android:layout_toRightOf="@+id/i_item_avatar"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Release : 2014" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
